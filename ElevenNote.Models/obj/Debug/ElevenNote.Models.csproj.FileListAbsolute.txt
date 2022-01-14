@@ -1,0 +1,16 @@
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Models\bin\Debug\ElevenNote.Models.dll.config
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Models\bin\Debug\ElevenNote.Models.dll
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Models\bin\Debug\ElevenNote.Models.pdb
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Models\bin\Debug\EntityFramework.dll
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Models\bin\Debug\EntityFramework.xml
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Models\obj\Debug\ElevenNote.Models.csproj.AssemblyReference.cache
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Models\obj\Debug\ElevenNote.Models.csproj.CoreCompileInputs.cache
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Models\obj\Debug\ElevenNote.Models.csproj.CopyComplete
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Models\obj\Debug\ElevenNote.Models.dll
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Models\obj\Debug\ElevenNote.Models.pdb

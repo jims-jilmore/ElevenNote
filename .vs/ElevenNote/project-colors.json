@@ -5,7 +5,12 @@
       "ProjectGuid": "c5f12601-6bcc-4383-8d06-f9550c20de59",
       "DisplayName": "ElevenNote.Data",
       "ColorIndex": 0
+    },
+    "714d2ce5-195e-40aa-9038-5eed797c11a7": {
+      "ProjectGuid": "714d2ce5-195e-40aa-9038-5eed797c11a7",
+      "DisplayName": "ElevenNote.WebAPI",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

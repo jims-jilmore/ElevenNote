@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "714d2ce5-195e-40aa-9038-5eed797c11a7": {
+      "ProjectGuid": "714d2ce5-195e-40aa-9038-5eed797c11a7",
+      "DisplayName": "ElevenNote.WebAPI",
+      "ColorIndex": 0
+    },
+    "c5f12601-6bcc-4383-8d06-f9550c20de59": {
+      "ProjectGuid": "c5f12601-6bcc-4383-8d06-f9550c20de59",
+      "DisplayName": "ElevenNote.Data",
+      "ColorIndex": 1
+    },
+    "49cda0fd-cc1f-4144-940f-9eafc7439d92": {
+      "ProjectGuid": "49cda0fd-cc1f-4144-940f-9eafc7439d92",
+      "DisplayName": "ElevenNote.Models",
+      "ColorIndex": 2
+    },
+    "f89a835b-9cf0-426b-952c-fdbebb882bda": {
+      "ProjectGuid": "f89a835b-9cf0-426b-952c-fdbebb882bda",
+      "DisplayName": "ElevenNote.Services",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

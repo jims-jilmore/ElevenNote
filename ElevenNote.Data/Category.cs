@@ -11,11 +11,18 @@ namespace ElevenNote.Data
     public class Category
     {
         [Key]
-        public int CategoryId { get; set; } //Key 
+        public int CategoryId { get; set; } 
+
         [ForeignKey("Note")]
-        public int NoteId { get; set; } //Foreign Key 
+        public int NoteId { get; set; } 
+
         [Required]
         public string CategoryTitle { get; set; }
+
+        [Required]
+        public DateTimeOffset CreatedUtc { get; set; }
+        public DateTimeOffset? ModifiedUtc { get; set; }
+
 
         public virtual ICollection<Note> Note { get; set; }
 

@@ -11,6 +11,9 @@ using ElevenNote.Data;
 namespace ElevenNote.Web //add using statement for data and changed namespace
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
+   /// <summary>
+   /// ///////////
+   /// </summary>
     public class ApplicationUser : IdentityUser
     {
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager, string authenticationType)
@@ -21,6 +24,9 @@ namespace ElevenNote.Web //add using statement for data and changed namespace
             return userIdentity;
         }
     }
+    /// <summary>
+    /// /////
+    /// </summary>
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
@@ -32,6 +38,9 @@ namespace ElevenNote.Web //add using statement for data and changed namespace
         {
             return new ApplicationDbContext();
         }
+        /// <summary>
+        /// ////
+        /// </summary>
         public class IdentityUserLoginConfiguration : EntityTypeConfiguration<IdentityUserLogin>
         {
             public IdentityUserLoginConfiguration()
@@ -46,6 +55,9 @@ namespace ElevenNote.Web //add using statement for data and changed namespace
                 HasKey(iur => iur.UserId);
             }
         }
+        /// <summary>
+        /// ///////
+        /// </summary>
 
         public DbSet<Note> Notes { get; set; }
         public DbSet<Category> Categories { get; set; }

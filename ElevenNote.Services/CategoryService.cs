@@ -12,6 +12,12 @@ namespace ElevenNote.Services
     public class CategoryService
     {
         public CategoryService() { }
+        private readonly Guid _categoryId;
+
+        public CategoryService(Guid categoryId)
+        {
+            _categoryId = categoryId;
+        }
 
         public bool CreateCategory(CategoryCreate catModel)
         {

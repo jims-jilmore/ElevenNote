@@ -21,5 +21,7 @@ namespace ElevenNote.Data
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset? ModifiedUtc { get; set; }
+
+        public List<Category> Categories { get; set; }  
     }
 }

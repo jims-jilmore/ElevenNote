@@ -1,4 +1,5 @@
-﻿using ElevenNote.Models;
+﻿using ElevenNote.Data;
+using ElevenNote.Models;
 using ElevenNote.Services;
 using Microsoft.AspNet.Identity;
 using System;
@@ -19,23 +20,26 @@ namespace ElevenNote.WebAPI.Controllers
             var noteService = new NoteService(userId);
             return noteService;
         }
-
         public IHttpActionResult Get()
         {
             NoteService noteService = CreateNoteService();
-            var notes = noteService.GetNotes();
+            var notes = noteService.GetNotes(id);
             return Ok(notes);
         }
-
+        
+        
         public IHttpActionResult Post(NoteCreate note)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
                 return BadRequest(ModelState);
+
             var service = CreateNoteService();
-            if (!service.CreateNote(note))
+
+            if(!service.CreateNote(note))
                 return InternalServerError();
 
             return Ok();
         }
+
     }
 }

@@ -310,15 +310,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ElevenNote.Data\ElevenNote.Data.csproj">
-      <Project>{c5f12601-6bcc-4383-8d06-f9550c20de59}</Project>
+      <Project>{C5F12601-6BCC-4383-8D06-F9550C20DE59}</Project>
       <Name>ElevenNote.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\ElevenNote.Models\ElevenNote.Models.csproj">
-      <Project>{49cda0fd-cc1f-4144-940f-9eafc7439d92}</Project>
+      <Project>{49CDA0FD-CC1F-4144-940F-9EAFC7439D92}</Project>
       <Name>ElevenNote.Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\ElevenNote.Services\ElevenNote.Services.csproj">
-      <Project>{f89a835b-9cf0-426b-952c-fdbebb882bda}</Project>
+      <Project>{F89A835B-9CF0-426B-952C-FDBEBB882BDA}</Project>
       <Name>ElevenNote.Services</Name>
     </ProjectReference>
   </ItemGroup>

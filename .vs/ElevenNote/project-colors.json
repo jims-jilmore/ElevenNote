@@ -15,7 +15,17 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "49cda0fd-cc1f-4144-940f-9eafc7439d92": {
+      "ProjectGuid": "49cda0fd-cc1f-4144-940f-9eafc7439d92",
+      "DisplayName": "ElevenNote.Models",
+      "ColorIndex": 2
+    },
+    "f89a835b-9cf0-426b-952c-fdbebb882bda": {
+      "ProjectGuid": "f89a835b-9cf0-426b-952c-fdbebb882bda",
+      "DisplayName": "ElevenNote.Services",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 4
 }

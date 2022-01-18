@@ -68,3 +68,8 @@ C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Data\obj\Debug\ElevenNote.Data.cs
 C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Data\obj\Debug\ElevenNote.Data.csproj.CopyComplete
 C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Data\obj\Debug\ElevenNote.Data.dll
 C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Data\obj\Debug\ElevenNote.Data.pdb
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Data\bin\Debug\Microsoft.Owin.Cors.dll
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Data\bin\Debug\System.Web.Cors.dll
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Data\bin\Debug\System.Web.Http.Cors.dll
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Data\bin\Debug\Microsoft.Owin.Cors.xml
+C:\ElevenFifty\BlueBadge\ElevenNote\ElevenNote.Data\bin\Debug\System.Web.Http.Cors.xml

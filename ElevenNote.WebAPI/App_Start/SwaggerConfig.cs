@@ -1,12 +1,12 @@
 using System.Web.Http;
 using WebActivatorEx;
-using ElevenNote.WebAPI;
 using Swashbuckle.Application;
 using System.Linq;
+using Swashbuckle.Swagger;
 using System.Collections.Generic;
 using System.Web.Http.Description;
 using System.Web.Http.Filters;
-using Swashbuckle.Swagger;
+using ElevenNote.WebAPI;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
@@ -23,9 +23,11 @@ namespace ElevenNote.WebAPI
             var isAuthorized = filterPipeline
                 .Select(filterInfo => filterInfo.Instance)
                 .Any(filter => filter is IAuthorizationFilter);
+
             var allowAnonymous = apiDescription.ActionDescriptor.GetCustomAttributes<AllowAnonymousAttribute>().Any();
 
             if (!isAuthorized || allowAnonymous) return;
+
             if (operation.parameters == null) operation.parameters = new List<Parameter>();
 
             operation.parameters.Add(new Parameter
@@ -74,7 +76,7 @@ namespace ElevenNote.WebAPI
                         new Parameter
                         {
                             type = "string",
-                            name = "username",
+                            name = "password",
                             required = false,
                             @in = "formData"
                         }
@@ -110,10 +112,12 @@ namespace ElevenNote.WebAPI
                         // additional fields by chaining methods off SingleApiVersion.
                         //
                         c.SingleApiVersion("v1", "ElevenNote.WebAPI");
+                        //Enable adding the Authorization header to [Authorize]d endpoints.
+                        c.OperationFilter(() => new AddAuthorizationHeaderParameterOperationFilter());
+                        //Show the programmatically generated /token endpoint in the UI
+                        c.DocumentFilter<AuthTokenEndpointOperation>();
 
-                        // If you want the output Swagger docs to be indented properly, enable the "PrettyPrint" option.
-                        //
-                        //c.PrettyPrint();
+                       
 
                         // If your API has multiple versions, use "MultipleApiVersions" instead of "SingleApiVersion".
                         // In this case, you must provide a lambda that tells Swashbuckle which actions should be
@@ -127,6 +131,7 @@ namespace ElevenNote.WebAPI
                         //        vc.Version("v2", "Swashbuckle Dummy API V2");
                         //        vc.Version("v1", "Swashbuckle Dummy API V1");
                         //    });
+
 
                         // You can use "BasicAuth", "ApiKey" or "OAuth2" options to describe security schemes for the API.
                         // See https://github.com/swagger-api/swagger-spec/blob/master/versions/2.0.md for more details.
@@ -247,7 +252,7 @@ namespace ElevenNote.WebAPI
                         // with the same path (sans query string) and HTTP method. You can workaround this by providing a
                         // custom strategy to pick a winner or merge the descriptions for the purposes of the Swagger docs
                         //
-                        //c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
+                        c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
 
                         // Wrap the default SwaggerGenerator with additional behavior (e.g. caching) or provide an
                         // alternative implementation for ISwaggerProvider with the CustomProvider option.
@@ -256,11 +261,6 @@ namespace ElevenNote.WebAPI
                     })
                 .EnableSwaggerUi(c =>
                     {
-                        // Use the "DocumentTitle" option to change the Document title.
-                        // Very helpful when you have multiple Swagger pages open, to tell them apart.
-                        //
-                        //c.DocumentTitle("My Swagger UI");
-
                         // Use the "InjectStylesheet" option to enrich the UI with one or more additional CSS stylesheets.
                         // The file must be included in your project as an "Embedded Resource", and then the resource's
                         // "Logical Name" is passed to the method as shown below.

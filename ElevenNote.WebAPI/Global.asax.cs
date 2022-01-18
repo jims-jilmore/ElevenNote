@@ -19,5 +19,9 @@ namespace ElevenNote.WebAPI
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+        //protected void application_beginrequest()
+        //{
+        //    httpcontext.current.response.addheader("access-control-allow-origin", "*");
+        //}
     }
 }

@@ -1,10 +1,8 @@
-﻿using System.Threading.Tasks;
+﻿using ElevenNote.Web;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
-using ElevenNote.WebAPI.Models;
-using ElevenNote.Data;
 
 namespace ElevenNote.WebAPI
 {

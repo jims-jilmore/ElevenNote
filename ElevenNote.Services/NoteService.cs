@@ -77,6 +77,7 @@ namespace ElevenNote.Services
                     };
             }
         }
+
         public bool UpdateNote(NoteEdit model)
         {
             using (var ctx = new ApplicationDbContext())

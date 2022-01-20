@@ -13,8 +13,8 @@ namespace ElevenNote.Data
         [Key]
         public int CategoryId { get; set; } 
 
-        [ForeignKey("Note")]
-        public int NoteId { get; set; } 
+        //[ForeignKey("Note")]
+        //public int NoteId { get; set; } 
 
         [Required]
         public string CategoryTitle { get; set; }
@@ -24,7 +24,7 @@ namespace ElevenNote.Data
         public DateTimeOffset? ModifiedUtc { get; set; }
 
 
-        public virtual ICollection<Note> Note { get; set; }
+        public virtual ICollection<Note> Notes { get; set; } = new List<Note>();
 
 
     }

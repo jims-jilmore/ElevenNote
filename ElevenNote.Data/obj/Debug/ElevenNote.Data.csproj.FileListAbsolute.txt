@@ -126,3 +126,5 @@ C:\ElevenFiftyBlue\ElevenNote\ElevenNote.Data\bin\Debug\Microsoft.CodeDom.Provid
 C:\ElevenFiftyBlue\ElevenNote\ElevenNote.Data\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\ElevenFiftyBlue\ElevenNote\ElevenNote.Data\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
 C:\ElevenFiftyBlue\ElevenNote\ElevenNote.Data\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\ElevenFiftyBlue\ElevenNote\ElevenNote.Data\obj\Debug\ElevenNote.Data.Migrations.InitialCreate.resources
+C:\ElevenFiftyBlue\ElevenNote\ElevenNote.Data\obj\Debug\ElevenNote.Data.csproj.GenerateResource.cache

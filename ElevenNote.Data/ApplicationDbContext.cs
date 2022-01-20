@@ -18,5 +18,6 @@ namespace ElevenNote.Web //add using statement for data and changed namespace
         }
         public DbSet<Note> Notes { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<CategoryAssignment> CatAssignment { get; set; }
     }
 }
